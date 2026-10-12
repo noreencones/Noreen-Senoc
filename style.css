@@ -1,0 +1,115 @@
+/* Basic sizing */
+* {
+  box-sizing: border-box;
+}
+
+/* Page font and colors */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: #333333;
+  background-color: white;
+}
+
+/* Header */
+header {
+  padding: 20px;
+  background-color: #ff8800;
+  color: white;
+}
+
+h1 {
+  margin: 0;
+  font-size: 28px;
+}
+
+/* Navigation */
+nav {
+  margin-top: 15px;
+}
+
+nav a {
+  display: inline-block;
+  color: white;
+  margin-right: 15px;
+  padding: 5px 0;
+}
+
+/* Main content */
+main {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 15px;
+}
+
+h2 {
+  color: #cc6600;
+  font-size: 22px;
+}
+
+section {
+  border: 1px solid #ff8800;
+  padding: 15px;
+  margin-bottom: 20px;
+}
+
+article {
+  border: 1px solid #ff8800;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+/* Forms */
+input,
+select,
+textarea,
+button {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  padding: 8px;
+  max-width: 100%;
+}
+
+textarea {
+  width: 100%;
+}
+
+button {
+  background-color: #ff8800;
+  color: white;
+  border: 1px solid #cc6600;
+  margin-bottom: 5px;
+}
+
+/* Links */
+a {
+  color: #cc6600;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+/* Recipe folders */
+summary {
+  cursor: pointer;
+}
+
+.folder {
+  border: 1px solid #ff8800;
+  padding: 15px;
+  margin-bottom: 10px;
+}
+
+/* Footer */
+footer {
+  padding: 20px;
+  background-color: #ff8800;
+  color: white;
+  text-align: center;
+  font-size: 14px;
+}
+
+footer details {
+  margin: 10px 0;
+}

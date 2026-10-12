@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CookBud - Upload</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>CookBud</h1>
+
+    <nav>
+      <a href="home.html">Home</a>
+      <a href="search.html">Search</a>
+      <a href="upload.html">Upload</a>
+      <a href="saved.html">Saved</a>
+      <a href="cookbudprofile.html">Profile</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Upload Your Recipe</h2>
+
+    <section>
+      <!-- Files can be selected, but they are not uploaded or saved. -->
+      <form>
+        <p>
+          <label for="pictures">Pictures of Your Recipe</label><br>
+          <input type="file" id="pictures" accept="image/*" multiple>
+        </p>
+
+        <p>
+          <label for="videos">Videos of Your Recipe</label><br>
+          <input type="file" id="videos" accept="video/*" multiple>
+        </p>
+
+        <p>
+          <label for="ingredients">Ingredients Used</label><br>
+          <textarea id="ingredients" rows="5"></textarea>
+        </p>
+
+        <p>
+          <label for="steps">Steps for the Process</label><br>
+          <textarea id="steps" rows="6"></textarea>
+        </p>
+
+        <p>
+          <label for="tools">Kitchen Tools Used</label><br>
+          <textarea id="tools" rows="3"></textarea>
+        </p>
+
+        <button type="button" disabled>Upload Recipe</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>Contact: senocnoreen@gmail.com | Hotline: 09812169465</p>
+
+    <details>
+      <summary>Terms and Privacy</summary>
+      <p>Share recipes respectfully and use your own pictures.</p>
+      <p>This demo does not store personal information.</p>
+    </details>
+
+    <details>
+      <summary>More information about CookBud</summary>
+      <p>CookBud helps people living independently, people who love cooking,
+        and people who want to save food and reduce kitchen waste.</p>
+    </details>
+  </footer>
+
+</body>
+</html>
