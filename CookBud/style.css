@@ -14,16 +14,17 @@ body {
 /* Header */
 header {
   padding: 20px;
-  background-color: #ff8800;
+  background: linear-gradient(to right, #ff8800, #ffb357);
   color: white;
 }
+
 
 h1 {
   margin: 0;
   font-size: 28px;
 }
 
-/* Navigation */
+
 nav {
   margin-top: 15px;
 }
@@ -31,8 +32,17 @@ nav {
 nav a {
   display: inline-block;
   color: white;
-  margin-right: 15px;
-  padding: 5px 0;
+  text-decoration: none;
+  border: 1px solid white;
+  border-radius: 8px;
+  padding: 8px 15px;
+  margin-right: 8px;
+  margin-bottom: 8px;
+}
+
+nav a:hover {
+  background-color: white;
+  color: #cc6600;
 }
 
 /* Main content */
@@ -70,6 +80,20 @@ button {
   max-width: 100%;
 }
 
+
+section,
+article {
+  border-radius: 12px;
+}
+
+
+input,
+select,
+textarea,
+button {
+  border-radius: 8px;
+}
+
 textarea {
   width: 100%;
 }
@@ -104,7 +128,7 @@ summary {
 /* Footer */
 footer {
   padding: 20px;
-  background-color: #ff8800;
+  background: linear-gradient(to right, #ff8800, #ffb357);
   color: white;
   text-align: center;
   font-size: 14px;
@@ -112,4 +136,11 @@ footer {
 
 footer details {
   margin: 10px 0;
+}
+
+/* Recipe pictures */
+.recipe-image {
+  width: 300px;
+  max-width: 100%;
+  height: auto;
 }
