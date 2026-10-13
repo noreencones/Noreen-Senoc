@@ -1,3 +1,4 @@
+
 * {
   box-sizing: border-box;
 }
@@ -7,20 +8,21 @@ body {
   margin: 0;
   font-family: Arial, sans-serif;
   color: #333333;
-  background-color: white;
+  background-color: #fffaf5;
+  line-height: 1.6;
 }
 
-/* Header */
+
 header {
-  padding: 20px;
-  background: linear-gradient(to right, #ff8800, #ffb357);
+  padding: 25px 20px;
+  background: linear-gradient(to right, #ff8800, #ffbb66);
   color: white;
+  text-align: center;
 }
-
 
 h1 {
   margin: 0;
-  font-size: 28px;
+  font-size: 34px;
 }
 
 
@@ -30,116 +32,224 @@ nav {
 
 nav a {
   display: inline-block;
-  color: white;
+  background-color: white;
+  color: #994400;
   text-decoration: none;
   border: 1px solid white;
   border-radius: 8px;
-  padding: 8px 15px;
-  margin-right: 8px;
-  margin-bottom: 8px;
+  padding: 8px 16px;
+  margin: 4px;
 }
 
 nav a:hover {
-  background-color: white;
-  color: #cc6600;
+  background-color: #fff0df;
+  color: #663300;
+  border-color: #cc6600;
 }
 
-/* Main content */
+
 main {
-  max-width: 800px;
-  margin: 20px auto;
+  max-width: 850px;
+  margin: 25px auto;
   padding: 15px;
 }
 
 h2 {
-  color: #cc6600;
-  font-size: 22px;
+  color: #a84b00;
+  font-size: 23px;
+  margin-top: 0;
 }
 
+h3 {
+  color: #994400;
+  font-size: 19px;
+}
+
+/* Main sections */
 section {
-  border: 1px solid #ff8800;
-  padding: 15px;
-  margin-bottom: 20px;
+  background-color: white;
+  border: 1px solid #ffd4a3;
+  border-radius: 12px;
+  padding: 22px;
+  margin-bottom: 25px;
 }
 
+/* Recipe boxes */
 article {
-  border: 1px solid #ff8800;
-  padding: 10px;
-  margin: 10px 0;
+  background-color: #fffaf5;
+  border: 1px solid #ffdfba;
+  border-radius: 10px;
+  padding: 18px;
+  margin: 15px 0;
 }
 
-/* Forms */
+article p {
+  margin-bottom: 5px;
+}
+
+/* Recipe pictures */
+.recipe-image {
+  display: block;
+  width: 300px;
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+/* Profile picture */
+.profile-picture {
+  display: block;
+  width: 120px;
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+  border: 2px solid #ff8800;
+  margin-bottom: 15px;
+}
+
+/* Form labels */
+label {
+  font-weight: bold;
+}
+
+/* Form controls */
 input,
 select,
 textarea,
 button {
   font-family: Arial, sans-serif;
   font-size: 16px;
-  padding: 8px;
   max-width: 100%;
-}
-
-
-section,
-article {
-  border-radius: 12px;
-}
-
-
-input,
-select,
-textarea,
-button {
   border-radius: 8px;
 }
 
+/* Text fields */
+input,
+select,
+textarea {
+  background-color: white;
+  color: #333333;
+  border: 1px solid #aaaaaa;
+  padding: 10px;
+  margin-top: 5px;
+}
+
+/* Give text inputs a consistent width */
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="tel"],
+input[type="search"] {
+  width: 320px;
+}
+
+/* Multiline fields */
 textarea {
   width: 100%;
 }
 
-button {
-  background-color: #ff8800;
-  color: white;
-  border: 1px solid #cc6600;
-  margin-bottom: 5px;
+/* Highlight the field being used */
+input:focus,
+select:focus,
+textarea:focus {
+  outline: 2px solid #cc6600;
+  outline-offset: 2px;
 }
 
-/* Links */
+/* Buttons */
+button {
+  background-color: #b84f00;
+  color: white;
+  border: 1px solid #b84f00;
+  padding: 10px 20px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #913e00;
+}
+
+/* Buttons that are only sample interfaces */
+button:disabled {
+  background-color: #eeeeee;
+  color: #666666;
+  border-color: #cccccc;
+  cursor: not-allowed;
+}
+
+/* Ordinary links */
 a {
-  color: #cc6600;
+  color: #a84b00;
 }
 
 a:hover {
   text-decoration: none;
 }
 
-/* Recipe folders */
+/* Expandable headings */
 summary {
   cursor: pointer;
+  font-weight: bold;
 }
 
+/* Saved recipe folders */
 .folder {
-  border: 1px solid #ff8800;
+  background-color: #fffaf5;
+  border: 1px solid #ffd4a3;
+  border-radius: 8px;
   padding: 15px;
-  margin-bottom: 10px;
+  margin-bottom: 12px;
+}
+
+.folder:hover {
+  background-color: #fff0df;
 }
 
 /* Footer */
 footer {
-  padding: 20px;
-  background: linear-gradient(to right, #ff8800, #ffb357);
-  color: white;
+  padding: 25px 20px;
+  background: linear-gradient(to right, #ff8800, #ffbb66);
+  color: #482400;
   text-align: center;
   font-size: 14px;
 }
 
 footer details {
-  margin: 10px 0;
+  margin: 12px 0;
 }
 
-/* Recipe pictures */
-.recipe-image {
-  width: 300px;
-  max-width: 100%;
-  height: auto;
+/* magadjust para sa phones*/
+@media (max-width: 600px) {
+  header {
+    padding: 20px 12px;
+  }
+
+  h1 {
+    font-size: 28px;
+  }
+
+  nav a {
+    padding: 7px 10px;
+    font-size: 14px;
+  }
+
+  main {
+    margin: 15px auto;
+    padding: 10px;
+  }
+
+  section {
+    padding: 15px;
+  }
+
+  article {
+    padding: 12px;
+  }
+
+  footer {
+    padding: 20px 12px;
+  }
 }
